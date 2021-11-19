@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #3aafa9;
+}
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+        /* navigation */
+
+
+#logo-div {
+    margin-left: 40px;
+}
+
+#logo-span {
+    font-size: 40px;
+    color: #feffff;
+}
+
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.5em;
+    
+}
+
+.nav-items-div {
+    margin: -60px 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    position: relative;
+}
+
+.nav-items-div a {
+    background-color: #3aafa9;
+    clear: right;
+    text-decoration: none;
+    color: #17252a;
+    line-height: 70px;
+    margin-right: 5%;
+}
+  
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item::after {
+    margin-top: -15px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #17252a;
+    transition: width .3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+nav {
+    background-color: #3aafa9;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 30px;
+    display: none;
+    width: 26px;
+    float: right;
+    color: #17252a;
+}
+
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        height: 80px;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        margin-top: -60px;
+        
+    }
+    .nav-items-div {
+        text-align: center;
+        width: 100%;
+        display: none;
+        font-size: 20px;
+        z-index: 5000;
+    }
+
+    .nav-items-div a {
+        display: block;
+        margin: 0;
+        
+    }
+    #toggle:checked + .nav-items-div {
+        display: block;
+        margin-top: 0px;
+        }
+    
+}
+
+        /* navigation end */
+
+
+
+        /* Slideshow */
+
+* {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+.gallery {
+background: #3aafa9;
+
+}
+
+.gallery-cell1 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    mix-blend-mode: darken;
+    background: url(https://reckxl.media/wp-content/uploads/2016/07/coffee-iphone-macbook-air-174-a-1920x1080.jpg) no-repeat;
+}
+
+.gallery-cell1 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #c72020;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell1 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+.gallery-cell2 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    background: url(https://wallpaperaccess.com/full/656670.jpg) no-repeat;
+    }
+
+.gallery-cell2 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004b47;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell2 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+.gallery-cell3 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    background: url(https://wallpaperplay.com/walls/full/3/c/4/164624.jpg) no-repeat;
+    }
+
+.gallery-cell3 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004b47;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell3 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+.gallery-cell4 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    background: url(https://wallpaperaccess.com/full/185915.jpg) no-repeat;
+}
+
+.gallery-cell4 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004b47;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell4 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    #home h1 {
+        margin-top: 60%;
+        font-size: 3em;
+    }
+
+    #home h4 {
+        font-size: 2em;
+        margin-top: -20px ;
+
+    }
+}
+
+        /* Slideshow end */
+
+.about-us-main {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #def2f1;
+}
+
+.about-us {
+    margin: 0px 100px;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-rows:    repeat(3, 30%);
+    grid-template-columns: repeat(2, 50%); 
+}
+
+.about-us h4 {
+    color: #def2f1;
+}
+
+.about-us1 {
+    padding: 20px;
+}
+
+.about-us2 {
+    padding: 20px;
+
+}
+
+.about-us3 {
+    padding: 20px;
+}
+
+.about-us4 {
+    padding: 20px;
+}
+
+.about-us5 {
+    padding: 20px;
+}
+
+.about-us6 {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us {
+        margin: 0px 20px;
+        display: grid;
+        grid-template-rows:    repeat(6, 15%);
+        grid-template-columns: repeat(1, 100%); 
+    }
+}
+
+#contact {
+    display: flex;
+    margin-top: 5%;
+}
+
+.contact-form {
+    display: grid;
+    justify-content: center;
+    align-items:   center;
+    background-color: #def2f1;
+    width: 320px;
+    margin-left: 10%;
+    font-family: 'Rowdies', cursive;    padding: 50px;
+    box-shadow: 0px 20px 100px 20px rgb(48, 47, 47);
+}  
+
+.contact-form span {
+    color: #17252a;
+    font-size: 25px;
+}
+
+.contact-form input {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.sendbutton {
+    background-color: #3aafa9;
+    font-family: 'Rowdies', cursive;    padding: 50px;
+    font-size: 15px;
+}
+
+.astx {
+    font-size: 30px;
+}
+
+.verticalline {
+    border-left: 6px solid #004b47;
+    box-shadow: 10px 10px 30px 10px #004b47;
+    height: 600px;
+    margin-left: 10%;
+}
+
+.map {
+    margin-left: 10%;
+}
+
+.map span {
+    color: #004b47;
+    font-family: 'Rowdies', cursive;  
+    font-size: 20px;
+
+}
+
+footer {
+    margin-top: 10%;
+    background-color: #def2f1;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004b47;
+    width: 100%;
+}
+
+#contact-text-div {
+    text-align: center;
+    font-size: 2em;
+    color: #004b47;
+}
+
+@media only screen and (max-width: 768px) {
+    .verticalline {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .contact-form {
+        display: grid;
+        justify-content: center;
+        align-items:   center;
+        background-color: #def2f1;
+        width: 320px;
+        margin: auto;
+        justify-items: center;
+        font-family: 'Rowdies', cursive;    padding: 50px;
+        box-shadow: 0px 20px 100px 20px rgb(48, 47, 47);
+    }  
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .verticalline {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .contact-form {
+        display: grid;
+        justify-content: center;
+        align-items:   center;
+        background-color: #def2f1;
+        width: 320px;
+        margin: auto;
+        justify-items: center;
+        font-family: 'Rowdies', cursive;    padding: 50px;
+        box-shadow: 0px 20px 100px 20px rgb(48, 47, 47);
+    }  
+    
+
+}

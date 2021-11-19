@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Name</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #3aafa9;
+}
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+        /* navigation */
+
+
+#logo-div {
+    margin-left: 40px;
+}
+
+#logo-span {
+    font-size: 40px;
+    color: #feffff;
+}
+
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.5em;
+
+}
+
+.nav-items-div {
+    margin: -60px 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    position: relative;
+}
+
+.nav-items-div a {
+    background-color: #3aafa9;
+    clear: right;
+    text-decoration: none;
+    color: #17252a;
+    line-height: 70px;
+    margin-right: 5%;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item::after {
+    margin-top: -15px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #17252a;
+    transition: width .3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+nav {
+    background-color: #3aafa9;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 30px;
+    display: none;
+    width: 26px;
+    float: right;
+    color: #17252a;
+}
+
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        height: 80px;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        margin-top: -60px;
+
+    }
+    .nav-items-div {
+        text-align: center;
+        width: 100%;
+        display: none;
+        font-size: 20px;
+        z-index: 5000;
+    }
+
+    .nav-items-div a {
+        display: block;
+        margin: 0;
+
+    }
+    #toggle:checked + .nav-items-div {
+        display: block;
+        margin-top: 0px;
+        }
+
+}
+
+        /* navigation end */
+
+
+
+        /* Slideshow */
+
+* {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+.gallery {
+background: #3aafa9;
+
+}
+
+.gallery-cell1 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    mix-blend-mode: darken;
+    background: url(https://reckxl.media/wp-content/uploads/2016/07/coffee-iphone-macbook-air-174-a-1920x1080.jpg) no-repeat;
+}
+
+.gallery-cell1 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #c72020;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell1 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+.gallery-cell2 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    background: url(https://wallpaperaccess.com/full/656670.jpg) no-repeat;
+    }
+
+.gallery-cell2 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004b47;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell2 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+.gallery-cell3 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    background: url(https://wallpaperplay.com/walls/full/3/c/4/164624.jpg) no-repeat;
+    }
+
+.gallery-cell3 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004b47;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell3 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+.gallery-cell4 {
+    width: 90%;
+    height: 90vh;
+    margin-right: 10px;
+    background: url(https://wallpaperaccess.com/full/185915.jpg) no-repeat;
+}
+
+.gallery-cell4 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #004b47;
+    font-size: 3em;
+    margin-top: 40%;
+}
+
+.gallery-cell4 h4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #004b47;
+    font-size: 2em;
+    margin: -20px 40px 0px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    #home h1 {
+        margin-top: 60%;
+        font-size: 3em;
+    }
+
+    #home h4 {
+        font-size: 2em;
+        margin-top: -20px ;
+
+    }
+}
+
+        /* Slideshow end */
+
+.about-us-main {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #def2f1;
+}
+
+.about-us {
+    margin: 0px 100px;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-rows:    repeat(3, 30%);
+    grid-template-columns: repeat(2, 50%);
+}
+
+.about-us h4 {
+    color: #def2f1;
+}
+
+.about-us1 {
+    padding: 20px;
+}
+
+.about-us2 {
+    padding: 20px;
+
+}
+
+.about-us3 {
+    padding: 20px;
+}
+
+.about-us4 {
+    padding: 20px;
+}
+
+.about-us5 {
+    padding: 20px;
+}
+
+.about-us6 {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us {
+        margin: 0px 20px;
+        display: grid;
+        grid-template-rows:    repeat(6, 15%);
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+#contact {
+    display: flex;
+    margin-top: 5%;
+}
+
+.contact-form {
+    display: grid;
+    justify-content: center;
+    align-items:   center;
+    background-color: #def2f1;
+    width: 320px;
+    margin-left: 10%;
+    font-family: 'Rowdies', cursive;    padding: 50px;
+    box-shadow: 0px 20px 100px 20px rgb(48, 47, 47);
+}
+
+.contact-form span {
+    color: #17252a;
+    font-size: 25px;
+}
+
+.contact-form input {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.sendbutton {
+    background-color: #3aafa9;
+    font-family: 'Rowdies', cursive;    padding: 50px;
+    font-size: 15px;
+}
+
+.astx {
+    font-size: 30px;
+}
+
+.verticalline {
+    border-left: 6px solid #004b47;
+    box-shadow: 10px 10px 30px 10px #004b47;
+    height: 600px;
+    margin-left: 18%;
+}
+
+.map {
+    margin-left: 20%;
+}
+
+.map span {
+    color: #004b47;
+    font-family: 'Rowdies', cursive;
+    font-size: 20px;
+
+}
+
+footer {
+    margin-top: 10%;
+    background-color: #def2f1;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004b47;
+    width: 100%;
+}
+
+#contact-text-div {
+    text-align: center;
+    font-size: 2em;
+    color: #004b47;
+}
+
+@media only screen and (max-width: 768px) {
+    .verticalline {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .contact-form {
+        display: grid;
+        justify-content: center;
+        align-items:   center;
+        background-color: #def2f1;
+        width: 320px;
+        margin: auto;
+        justify-items: center;
+        font-family: 'Rowdies', cursive;    padding: 50px;
+        box-shadow: 0px 20px 100px 20px rgb(48, 47, 47);
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .verticalline {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .contact-form {
+        display: grid;
+        justify-content: center;
+        align-items:   center;
+        background-color: #def2f1;
+        width: 320px;
+        margin: auto;
+        justify-items: center;
+        font-family: 'Rowdies', cursive;    padding: 50px;
+        box-shadow: 0px 20px 100px 20px rgb(48, 47, 47);
+    }
+
+
+}
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+</head>
+<body>
+    <div class="container">
+    
+        <header>
+            <nav>
+                <div id="logo-div">
+                    <br>
+                        <span id="logo-span"><i>Your Name</i></span>
+                </div>
+                <div class="nav">      
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle"/>
+                    <div class="nav-items-div">
+                        <a href="#home" class="nav-item" onclick="slowScroll('#home')">Home</a>
+                        <a href="#aboutus" class="nav-item" onclick="slowScroll('#aboutus')">About Us</a>
+                        <a href="#contact-text-div" class="nav-item" onclick="slowScroll('#contact-text-div')">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- slider -->
+
+        <section>
+
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' id="home">
+                
+                <div class="gallery-cell1">
+                    <h1>Lorem Ipsum</h1>
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                </div>
+
+                <div class="gallery-cell2">
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                </div>
+
+                <div class="gallery-cell3">
+                   <h1> Lorem, ipsum. </h1>
+                   <h4>Lorem, ipsum dolor sit amet consectetur adipisicing.</h4>
+                </div>
+
+                <div class="gallery-cell4">
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- slider end -->
+
+        <section>
+            <div class="about-us-main" id="aboutus">
+                <span>About Us</span>
+            </div>
+
+            <div class="about-us">
+                <div class="about-us1">
+
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur commodi delectus atque nisi quae praesentium nobis odio consectetur exercitationem distinctio, repellat facere. Architecto aperiam nostrum, id sequi, deleniti magnam eligendi officia doloremque corporis corrupti alias necessitatibus odit quam voluptatum deserunt.</h4>
+
+                </div>
+
+                <div class="about-us2">
+
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, aut illo esse saepe adipisci beatae sapiente. Exercitationem placeat optio sed cumque dolores numquam repellendus? Assumenda ipsa nisi, tempora excepturi laudantium nemo neque eaque dolorum maiores ratione laboriosam adipisci ea magni repudiandae placeat architecto!quasi!</h4>
+
+                </div>
+
+                <div class="about-us3">
+
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde praesentium, consequuntur pariatur, doloribus asperiores dolorem id dolores necessitatibus optio perspiciatis molestias, iusto facere nisi architecto eos quod deleniti veritatis quisquam vel velit quia enim porro. At dolorem, animi ratione quisquam iste officiis nam.</h4>
+
+                </div>
+
+                <div class="about-us4">
+
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam odit iste dolorem labore officiis. Assumenda, asperiores dolor ut, laudantium quae sapiente nam maxime eos quia tempora adipisci non temporibus, reprehenderit iusto ratione quod! Quaerat, tenetur omnis voluptates itaque porro deleniti distinctio quis harum exercitationem in.</h4>
+                
+                </div>
+
+                <div class="about-us5">
+
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde praesentium, consequuntur pariatur, doloribus asperiores dolorem id dolores necessitatibus optio perspiciatis molestias, iusto facere nisi architecto eos quod deleniti veritatis quisquam vel velit quia enim porro. At dolorem, animi ratione quisquam iste officiis nam .</h4>
+
+                </div>
+
+                <div class="about-us6">
+
+                    <h1>Lorem, ipsum.</h1>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam odit iste dolorem labore officiis. Assumenda, asperiores dolor ut, laudantium quae sapiente nam maxime eos quia tempora adipisci non temporibus, reprehenderit iusto ratione quod! Quaerat, tenetur omnis voluptates itaque porro deleniti distinctio quis harum exercitationem in,</h4>
+                
+                </div>
+
+            </div>
+        </section>
+        <section> 
+            <div id="contact-text-div">
+                    <span>Contact With Us</span>
+                </div>
+            <div id="contact">
+               
+                <div class="contact-form">
+                    <form>
+                        <span for="mail">Mail <span class="astx">*</span></span> <br>
+                        <input type="email" name="email" id="form-mail" placeholder="Your Email"> <br> <br>
+                        <span>Name <span class="astx">*</span></span> <br>
+                        <input type="text" name="name" id="form-name" placeholder="Your Name"> <br> <br>
+                        <span>Message <span class="astx">*</span></span> <br>
+                        <textarea name="text-message" id="form-message" cols="30" rows="5" placeholder="Your Message"></textarea> <br>
+                        <input type="button" value="Send Message" class="sendbutton">
+                    </form>
+                </div>
+                <div class="verticalline">
+
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7448.53747874172!2d44.516316872122516!3d40.178570627467806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1596045446892!5m2!1sen!2s" width="300px" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <br> <br> <br> 
+                    <span>Phone: +1234567890</span> <br> <br> <br>
+                    <span>Address: Armenia, Yerevan  </span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+                <span>
+            Made by | Kamo Movsisyan
+                </span>
+        </footer>
+
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="mainjs.js"></script>
+<script>
+    function slowScroll(id) {
+  $('html, body').animate({
+    scrollTop: $(id).offset().top
+  }, 500);
+}
+
+</script>
+</body>
+</html>
